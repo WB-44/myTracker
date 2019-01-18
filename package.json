@@ -1,0 +1,22 @@
+{
+  "name": "mytracker",
+  "version": "0.1.0",
+  "description": "A personnal poker tracker",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArcLight4/myTracker.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArcLight4/myTracker/issues"
+  },
+  "homepage": "https://github.com/ArcLight4/myTracker#readme",
+  "devDependencies": {
+    "electron": "^4.0.1"
+  }
+}
