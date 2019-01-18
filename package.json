@@ -18,5 +18,8 @@
   "homepage": "https://github.com/ArcLight4/myTracker#readme",
   "devDependencies": {
     "electron": "^4.0.1"
+  },
+  "dependencies": {
+    "mysql": "^2.16.0"
   }
 }
