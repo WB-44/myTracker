@@ -11,9 +11,13 @@ db.connect((err) => {
 
 function createWindow () {
 
-  win = new BrowserWindow({ width: 1200, height: 900 });
+  win = new BrowserWindow({ width: 1200, height: 900, show: false, autoHideMenuBar: true, icon: './ressources/poker_icon2.png' });
 
-  win.loadFile('views/index.html');
+  win.loadFile('views/pages/index.html');
+  win.openDevTools();
+  win.once('ready-to-show', ()=> {
+    win.show();
+  })
 }
 
 app.on('ready', createWindow);
