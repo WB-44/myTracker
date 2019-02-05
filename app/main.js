@@ -13,7 +13,7 @@ function createWindow () {
 
   win = new BrowserWindow({ width: 1200, height: 900, show: false, autoHideMenuBar: true, icon: './ressources/poker_icon2.png' });
 
-  win.loadFile('views/pages/index.html');
+  win.loadFile('../../../../../app/pages/index.html')
   win.openDevTools();
   win.once('ready-to-show', ()=> {
     win.show();

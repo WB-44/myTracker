@@ -4,7 +4,7 @@
   "description": "A personnal poker tracker",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron ./app/main.js"
   },
   "repository": {
     "type": "git",
