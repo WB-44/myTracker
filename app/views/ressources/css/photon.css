@@ -747,6 +747,7 @@ img {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 .nav-group-item:active, .nav-group-item.active {
   background-color: #dcdfe1;

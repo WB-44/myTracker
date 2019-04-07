@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow} = require('electron');
 const Connection = require('./config/connection');
 
 let connection = new Connection;
@@ -10,11 +10,9 @@ db.connect((err) => {
 });
 
 function createWindow () {
+  win = new BrowserWindow({ width: 1200, height: 900, show: false, autoHideMenuBar: false, icon: 'app/views/ressources/poker_icon2.png' });
 
-  win = new BrowserWindow({ width: 1200, height: 900, show: false, autoHideMenuBar: true, icon: './ressources/poker_icon2.png' });
-
-  win.loadFile('../../../../../app/pages/index.html')
-  win.openDevTools();
+  win.loadFile(__dirname+'/views/pages/index.html');
   win.once('ready-to-show', ()=> {
     win.show();
   })
